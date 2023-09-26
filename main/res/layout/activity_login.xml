@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_marginTop="190dp">
+
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:background="@drawable/blue_border"
+            android:drawableLeft="@drawable/baseline_account_24"
+            android:drawablePadding="10dp"
+            android:hint="请输入账号"
+            android:paddingLeft="12dp" />
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/password"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:paddingLeft="12dp"
+            android:drawablePadding="10dp"
+            android:background="@drawable/blue_border"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/signup_btn"
+            android:text="登  录"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            android:backgroundTint="@color/black"
+            android:drawablePadding="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHint"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:text="没有账号？请注册"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

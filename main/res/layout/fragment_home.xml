@@ -1,0 +1,55 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@drawable/top_background">
+
+            <com.flyco.tablayout.SlidingTabLayout
+                android:id="@+id/SlidingTabLayout"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                tl:tl_indicator_color="@color/dark_blue"
+                tl:tl_indicator_margin_left="2dp"
+                tl:tl_indicator_margin_right="2dp"
+                tl:tl_indicator_corner_radius="15dp"
+                tl:tl_indicator_style="BLOCK"
+                tl:tl_textUnselectColor="@color/dark_blue"
+                tl:tl_textBold="BOTH"
+                tl:tl_textsize="15dp"/>
+
+            <ImageButton
+                android:layout_gravity="center"
+                android:id="@+id/imageButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="10"
+                android:onClick="doClick"
+                android:background="@drawable/baseline_menu_24"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <com.java.fangzheng.view.FixedViewPager
+            android:id="@+id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

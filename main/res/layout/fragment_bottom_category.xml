@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:zhy="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet_layout"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    tools:context=".ui.Fragment.BottomCategoryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/baseline_keyboard_arrow_down_24"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/back_btn"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的频道"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"/>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/flowlayoutOn"
+            zhy:max_select="-1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="8dp">
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="为你推荐"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="24dp"/>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/flowlayoutOff"
+            zhy:max_select="-1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginLeft="8dp">
+
+        </com.zhy.view.flowlayout.TagFlowLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvHint"
+            android:gravity="center"
+            android:textColor="#AAAAAA"
+            android:textSize="16dp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
